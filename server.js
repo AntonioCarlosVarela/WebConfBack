@@ -3,7 +3,8 @@ const port = process.env.PORT || 8080;
 const host = process.env.HOST || '127.0.0.1';
 const express = require('express');
 const app = express();
-const cors = require("cors");
+const cors = require('cors');
+app.use(cors());
 app.use(cors({
   exposedHeaders: ['Location'],
 }));
