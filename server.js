@@ -4,12 +4,11 @@ const host = process.env.HOST || '127.0.0.1';
 const express = require('express');
 const app = express();
 const cors = require('cors');
-app.use(cors());
-app.use(cors({
+/*app.use(cors({
   allowedHeaders: ['Location'], 
   exposedHeaders: ['Location'],
 }));
-
+*/
 /*
 //allowed domains
 const permittedLinker = ['localhost', '127.0.0.1', 'http://eventos.esmad.ipp.pt/webconference', 'http://eventos.esmad.ipp.pt/', process.env.IP]; // who can link here?
